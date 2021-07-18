@@ -1,0 +1,14 @@
+server:
+  # 服务端口号
+  port: 18002
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://192.168.100.88:33306/demo?characterEncoding=utf8&useSSL=false&serverTimezone=Asia/Shanghai
+    username: root
+    password: wZ6try8MCNGi6n8P
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true

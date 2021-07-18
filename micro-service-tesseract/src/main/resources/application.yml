@@ -1,0 +1,19 @@
+server:
+  # 服务端口号
+  port: 18001
+
+spring:
+  application:
+    # 服务名称
+    name: micro-service-tesseract
+
+# Tesseract OCR
+tesseract:
+  tessdata:
+    # 如果你希望构建docker镜像,建议设置为 ${TESSDATA_PREFIX}
+    # 如果你正在IDEA里调试,请设置为 ${spring.application.name}/tessdata
+    prefix: ${spring.application.name}/tessdata
+  # eng+deu
+  language: eng
+  # Use --oem 1 for LSTM, --oem 0 for Legacy Tesseract.
+  oem: 1

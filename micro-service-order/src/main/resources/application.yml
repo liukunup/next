@@ -1,0 +1,12 @@
+server:
+  port: 7001
+
+spring:
+  application:
+    name: micro-service-order
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://192.168.100.88:33306/demo?useUnicode=true&characterEncoding=utf-8&useSSL=false
+    username: root
+    password: wZ6try8MCNGi6n8P
